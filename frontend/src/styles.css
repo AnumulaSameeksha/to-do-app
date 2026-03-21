@@ -1,0 +1,169 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+  color: #1e293b;
+}
+
+/* Container */
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.form input,
+.form select {
+  flex: 1;
+  min-width: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.form input:focus,
+.form select:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+/* Add Button */
+.form button {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.form button:hover {
+  transform: scale(1.05);
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  background: #e0e7ff;
+  color: #3730a3;
+  border-radius: 10px;
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #c7d2fe;
+}
+
+/* Task Card */
+.task {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.2s;
+}
+
+.task:hover {
+  transform: translateY(-3px);
+}
+
+/* Completed */
+.done {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+/* Title */
+.task h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Description */
+.task p {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 5px;
+}
+
+/* Due Date */
+.task p:last-of-type {
+  font-size: 13px;
+  color: #475569;
+}
+
+/* Priority */
+.priority {
+  display: inline-block;
+  margin: 6px 0;
+  font-weight: 600;
+}
+
+/* Priority Colors */
+.priority.Low {
+  color: #22c55e;
+}
+
+.priority.Medium {
+  color: #f59e0b;
+}
+
+.priority.High {
+  color: #ef4444;
+}
+
+/* Buttons inside task */
+.task div {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.task button {
+  background: #f1f5f9;
+  color: #1e293b;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.task button:hover {
+  background: #e2e8f0;
+}
